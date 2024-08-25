@@ -132,4 +132,3 @@ if __name__ == "__main__":
     print("Suggestions:")
     for suggestion in results['Suggestions']:
         print(suggestion)
-

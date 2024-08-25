@@ -21,7 +21,7 @@ def anthropic_text_response(prompt):
         # This will come from config file.
         model="claude-3-opus-20240229",
         )
-        return(message.content)
+        return response.content[0].text
     except anthropic.APIConnectionError as e:
         st.error("The server could not be reached")
         st.error(e.__cause__)  # an underlying Exception, likely raised within httpx.
